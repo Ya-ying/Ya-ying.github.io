@@ -56,7 +56,7 @@ params:
         lastUpdated: Jan 02, 2006 15:04 MST
 
     sidebar:
-        emoji: 🍥
+        emoji: 🐱‍💻
         subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         avatar:
             enabled: true
@@ -200,20 +200,30 @@ params:
 ### See https://stack.jimmycai.com/config/menu
 ### To remove about, archive and search page menu item, remove `menu` field from their FrontMatter
 menu:
-    main: []
-    custom: []
+    main: 
+        - identifier: home
+          name: Home
+          url: /
+          weight: -100
+          params:
+            icon: home
+            newTab: false
+    custom: 
+        - identifier: website
+          name: My RaspberryFields
+          url: https://publish.obsidian.md/roll-like-raspberry/%F0%9F%97%9E%EF%B8%8F%E9%87%8E%E8%8E%93%E5%9C%B0%E6%9C%88%E6%8A%A5/%F0%9F%8C%BB202406
+          weight: -50
+          params:
+              icon: medical-cross
     social:
         - identifier: github
           name: GitHub
-          url: https://github.com/CaiJimmy/hugo-theme-stack
+          url: https://github.com/Ya-ying
+          weight: 10
           params:
               icon: brand-github
 
-        - identifier: twitter
-          name: Twitter
-          url: https://twitter.com
-          params:
-              icon: brand-twitter
+        
 
 related:
     includeNewer: true
